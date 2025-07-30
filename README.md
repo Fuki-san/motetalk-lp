@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MoteTalk LP
 
-## Getting Started
+AI恋愛会話アシスタント「MoteTalk」のランディングページです。
 
-First, run the development server:
+## 📋 プロジェクト概要
 
+- **サービス名**: MoteTalk
+- **概要**: モテる男のDMパターンを学習したAIが、非モテの典型パターンを回避し、自然にデートへつなげるサービス
+- **ターゲット**: マッチングアプリで恋愛に悩む男性
+
+## 🚀 技術スタック
+
+- **フレームワーク**: Next.js 15.4.4
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS v4
+- **アニメーション**: Framer Motion
+- **アイコン**: Lucide React
+- **デプロイ**: Vercel推奨
+
+## 📦 セットアップ
+
+### 前提条件
+- Node.js 18.0.0以上
+- npm または yarn
+
+### インストール
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# リポジトリをクローン
+git clone https://github.com/Fuki-san/motetalk-lp.git
+cd motetalk-lp
+
+# 依存関係をインストール
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 開発サーバー起動
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いて確認してください。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 プロジェクト構造
 
-## Learn More
+```
+motetalk-lp/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── layout.tsx      # ルートレイアウト
+│   │   ├── page.tsx        # メインページ
+│   │   └── globals.css     # グローバルスタイル
+│   └── components/         # Reactコンポーネント
+│       ├── Header.tsx      # ヘッダー
+│       ├── Hero.tsx        # ヒーローセクション
+│       ├── Problems.tsx    # 問題提起セクション
+│       ├── Authority.tsx   # 権威性セクション
+│       ├── Story.tsx       # 成功ストーリー
+│       ├── Features.tsx    # 機能紹介
+│       ├── Pricing.tsx     # 料金プラン
+│       ├── FAQ.tsx         # よくある質問
+│       ├── FinalCTA.tsx    # 最終CTA
+│       └── Footer.tsx      # フッター
+├── public/
+│   └── img/               # 画像ファイル
+│       ├── matching-app-before.svg
+│       ├── matching-app-after.svg
+│       ├── matching-app-fail.svg
+│       └── matching-app-success.svg
+└── docs/                  # ドキュメント
+    ├── DESIGN.md          # デザイン仕様
+    ├── CONTENT.md         # コンテンツ仕様
+    └── DEPLOYMENT.md      # デプロイ手順
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 デザインガイドライン
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **プライマリカラー**: Pink (#E91E63)
+- **セカンダリカラー**: Green (#4CAF50)
+- **フォント**: Inter
+- **レスポンシブ**: モバイルファースト
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+詳細は [docs/DESIGN.md](docs/DESIGN.md) を参照してください。
 
-## Deploy on Vercel
+## 📝 コンテンツ管理
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **コピーライティング**: [docs/CONTENT.md](docs/CONTENT.md)
+- **画像素材**: `public/img/` ディレクトリ
+- **参考資料**: `LP_create.md`, `LP_cla.md`, `writing.md`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 デプロイ
+
+詳細は [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) を参照してください。
+
+### Vercel推奨
+```bash
+npm run build
+vercel --prod
+```
+
+## 🤝 開発ガイドライン
+
+### コミットメッセージ
+- `feat:` 新機能追加
+- `fix:` バグ修正
+- `style:` スタイル変更
+- `docs:` ドキュメント更新
+- `refactor:` リファクタリング
+
+### ブランチ戦略
+- `main`: 本番環境
+- `develop`: 開発環境
+- `feature/xxx`: 機能開発
+
+## 📞 サポート
+
+- **GitHub Issues**: バグ報告・機能要望
+- **Pull Requests**: 改善提案歓迎
+
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
