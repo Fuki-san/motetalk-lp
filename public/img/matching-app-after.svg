@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="350" viewBox="0 0 300 350">
+  <!-- 背景 -->
+  <rect width="300" height="350" fill="#f8f9fa"/>
+  
+  <!-- ヘッダー -->
+  <rect x="0" y="0" width="300" height="60" fill="#4CAF50"/>
+  <circle cx="30" cy="30" r="20" fill="#fff"/>
+  <text x="150" y="35" text-anchor="middle" fill="white" font-size="16" font-weight="bold">マッチングアプリ</text>
+  
+  <!-- メッセージ1 (送信) -->
+  <rect x="190" y="80" width="90" height="40" rx="15" fill="#4CAF50"/>
+  <text x="200" y="105" fill="white" font-size="12">初めまして！</text>
+  
+  <!-- メッセージ2 (送信) -->
+  <rect x="120" y="130" width="160" height="40" rx="15" fill="#4CAF50"/>
+  <text x="130" y="155" fill="white" font-size="11">写真めっちゃ可愛いですね！</text>
+  
+  <!-- メッセージ3 (受信) -->
+  <rect x="20" y="180" width="140" height="40" rx="15" fill="#E1F5FE"/>
+  <text x="30" y="205" fill="#0277BD" font-size="12">ありがとうございます</text>
+  
+  <!-- 時間表示 -->
+  <text x="20" y="230" fill="#999" font-size="10">1分前</text>
+  
+  <!-- 結果表示 -->
+  <rect x="20" y="250" width="260" height="50" rx="10" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  <text x="150" y="275" text-anchor="middle" fill="#4CAF50" font-size="14" font-weight="bold">返信あり！</text>
+  <text x="150" y="295" text-anchor="middle" fill="#4CAF50" font-size="12">会話が続いています</text>
+</svg> 
